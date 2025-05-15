@@ -1,179 +1,208 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Kandydaci na Prezydenta RP 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .candidates {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .candidate {
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 15px;
-            width: 300px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 40px;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>Kandydaci na Prezydenta RP 2025</h1>
+    <p>Porównaj sylwetki kandydatów i zdecyduj, kto najlepiej odpowiada Twoim wartościom</p>
 </header>
 <main>
-    <div class="candidates">
-        <div class="candidate">
-            <h2>Artur Bartoszewicz</h2>
-            <p><strong>Partia:</strong> Niezależny</p>
-            <p><strong>Wiek:</strong> 50</p>
-            <p><strong>Zalety:</strong> Gospodarka, finanse</p>
-            <p><strong>Wady:</strong> Niska rozpoznawalność</p>
-        </div>
-        <div class="candidate">
-            <h2>Magdalena Biejat</h2>
-            <p><strong>Partia:</strong> Lewica</p>
-            <p><strong>Wiek:</strong> 42</p>
-            <p><strong>Zalety:</strong> Prawa kobiet, sprawiedliwość społeczna</p>
-            <p><strong>Wady:</strong> Skrajnie lewicowa</p>
-        </div>
-        <div class="candidate">
-            <h2>Grzegorz Braun</h2>
-            <p><strong>Partia:</strong> Konfederacja</p>
-            <p><strong>Wiek:</strong> 57</p>
-            <p><strong>Zalety:</strong> Suwerenność, tradycja</p>
-            <p><strong>Wady:</strong> Kontrowersyjność</p>
-        </div>
-        <div class="candidate">
-            <h2>Szymon Hołownia</h2>
-            <p><strong>Partia:</strong> Polska 2050</p>
-            <p><strong>Wiek:</strong> 48</p>
-            <p><strong>Zalety:</strong> Ekologia, centrowe poglądy</p>
-            <p><strong>Wady:</strong> Brak doświadczenia politycznego</p>
-        </div>
-        <div class="candidate">
-            <h2>Marek Jakubiak</h2>
-            <p><strong>Partia:</strong> Federacja dla RP</p>
-            <p><strong>Wiek:</strong> 62</p>
-            <p><strong>Zalety:</strong> Gospodarka, niezależność</p>
-            <p><strong>Wady:</strong> Małe poparcie</p>
-        </div>
-        <div class="candidate">
-            <h2>Maciej Maciak</h2>
-            <p><strong>Partia:</strong> Niezależny</p>
-            <p><strong>Wiek:</strong> 45</p>
-            <p><strong>Zalety:</strong> Wolność słowa</p>
-            <p><strong>Wady:</strong> Brak doświadczenia</p>
-        </div>
-        <div class="candidate">
-            <h2>Sławomir Mentzen</h2>
-            <p><strong>Partia:</strong> Nowa Nadzieja</p>
-            <p><strong>Wiek:</strong> 39</p>
-            <p><strong>Zalety:</strong> Niskie podatki, wolny rynek</p>
-            <p><strong>Wady:</strong> Radykalne poglądy</p>
-        </div>
-        <div class="candidate">
-            <h2>Karol Nawrocki</h2>
-            <p><strong>Partia:</strong> Niezależny</p>
-            <p><strong>Wiek:</strong> 43</p>
-            <p><strong>Zalety:</strong> Patriotyzm</p>
-            <p><strong>Wady:</strong> Brak doświadczenia wyborczego</p>
-        </div>
-        <div class="candidate">
-            <h2>Joanna Senyszyn</h2>
-            <p><strong>Partia:</strong> Niezależna</p>
-            <p><strong>Wiek:</strong> 68</p>
-            <p><strong>Zalety:</strong> Prawa człowieka</p>
-            <p><strong>Wady:</strong> Kontrowersje</p>
-        </div>
-        <div class="candidate">
-            <h2>Krzysztof Stanowski</h2>
-            <p><strong>Partia:</strong> Niezależny</p>
-            <p><strong>Wiek:</strong> 41</p>
-            <p><strong>Zalety:</strong> Świeże spojrzenie</p>
-            <p><strong>Wady:</strong> Brak doświadczenia politycznego</p>
-        </div>
-        <div class="candidate">
-            <h2>Rafał Trzaskowski</h2>
-            <p><strong>Partia:</strong> PO</p>
-            <p><strong>Wiek:</strong> 53</p>
-            <p><strong>Zalety:</strong> Doświadczenie, samorządność</p>
-            <p><strong>Wady:</strong> Krytyka działań w Warszawie</p>
-        </div>
-        <div class="candidate">
-            <h2>Marek Woch</h2>
-            <p><strong>Partia:</strong> Bezpartyjni Samorządowcy</p>
-            <p><strong>Wiek:</strong> 55</p>
-            <p><strong>Zalety:</strong> Lokalność</p>
-            <p><strong>Wady:</strong> Mało znany</p>
-        </div>
-        <div class="candidate">
-            <h2>Adrian Zandberg</h2>
-            <p><strong>Partia:</strong> Razem</p>
-            <p><strong>Wiek:</strong> 45</p>
-            <p><strong>Zalety:</strong> Sprawiedliwość społeczna</p>
-            <p><strong>Wady:</strong> Radykalizm</p>
-        </div>
-    </div>
+    <section class="candidates">
+        <!-- Karty kandydatów będą uzupełnione dynamicznie przez JavaScript -->
     </section>
-<h2>Tabela porównawcza</h2>
-<table>
-    <tr>
-        <th>Kandydat</th><th>Partia</th><th>Wiek</th><th>Zalety</th><th>Wady</th>
-    </tr>
-    <tr><td>Artur Bartoszewicz</td><td>Niezależny</td><td>50</td><td>Gospodarka, finanse</td><td>Niska rozpoznawalność</td></tr>
-    <tr><td>Magdalena Biejat</td><td>Lewica</td><td>42</td><td>Prawa kobiet, sprawiedliwość społeczna</td><td>Skrajnie lewicowa</td></tr>
-    <tr><td>Grzegorz Braun</td><td>Konfederacja</td><td>57</td><td>Suwerenność, tradycja</td><td>Kontrowersyjność</td></tr>
-    <tr><td>Szymon Hołownia</td><td>Polska 2050</td><td>48</td><td>Ekologia, centrowe poglądy</td><td>Brak doświadczenia politycznego</td></tr>
-    <tr><td>Marek Jakubiak</td><td>Federacja dla RP</td><td>62</td><td>Gospodarka, niezależność</td><td>Małe poparcie</td></tr>
-    <tr><td>Maciej Maciak</td><td>Niezależny</td><td>45</td><td>Wolność słowa</td><td>Brak doświadczenia</td></tr>
-    <tr><td>Sławomir Mentzen</td><td>Nowa Nadzieja</td><td>39</td><td>Niskie podatki, wolny rynek</td><td>Radykalne poglądy</td></tr>
-    <tr><td>Karol Nawrocki</td><td>Niezależny</td><td>43</td><td>Patriotyzm</td><td>Brak doświadczenia wyborczego</td></tr>
-    <tr><td>Joanna Senyszyn</td><td>Niezależna</td><td>68</td><td>Prawa człowieka</td><td>Kontrowersje</td></tr>
-    <tr><td>Krzysztof Stanowski</td><td>Niezależny</td><td>41</td><td>Świeże spojrzenie</td><td>Brak doświadczenia politycznego</td></tr>
-    <tr><td>Rafał Trzaskowski</td><td>PO</td><td>53</td><td>Doświadczenie, samorządność</td><td>Krytyka działań w Warszawie</td></tr>
-    <tr><td>Marek Woch</td><td>Bezpartyjni Samorządowcy</td><td>55</td><td>Lokalność</td><td>Mało znany</td></tr>
-    <tr><td>Adrian Zandberg</td><td>Razem</td><td>45</td><td>Sprawiedliwość społeczna</td><td>Radykalizm</td></tr>
-</table>
 
+    <section class="comparison">
+        <h2>Tabela porównawcza kandydatów</h2>
+        <p>Poniższa tabela zestawia kluczowe informacje, aby ułatwić Ci wybór odpowiedniego kandydata.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kandydat</th>
+                    <th>Partia</th>
+                    <th>Wiek</th>
+                    <th>Zalety</th>
+                    <th>Wady</th>
+                </tr>
+            </thead>
+            <tbody id="comparison-table">
+                <!-- Dane będą uzupełnione dynamicznie przez JS -->
+            </tbody>
+        </table>
+    </section>
 </main>
 <footer>
-    <p>&copy; 2025 Strona informacyjna o kandydatach</p>
+    <p>&copy; 2025 Strona informacyjna o kandydatach. Projekt edukacyjny. Dane mogą ulec zmianie.</p>
 </footer>
-</body>
+
+<script>
+// Lista kandydatów
+const candidatesData = [
+  {
+    name: "Artur Bartoszewicz",
+    party: "Niezależny",
+    age: 50,
+    advantages: "Gospodarka, finanse",
+    disadvantages: "Niska rozpoznawalność"
+  },
+  {
+    name: "Magdalena Biejat",
+    party: "Lewica",
+    age: 42,
+    advantages: "Prawa kobiet, sprawiedliwość społeczna",
+    disadvantages: "Skrajnie lewicowa"
+  },
+  {
+    name: "Grzegorz Braun",
+    party: "Konfederacja",
+    age: 57,
+    advantages: "Suwerenność, tradycja",
+    disadvantages: "Kontrowersyjność"
+  },
+  {
+    name: "Szymon Hołownia",
+    party: "Polska 2050",
+    age: 48,
+    advantages: "Ekologia, centrowe poglądy",
+    disadvantages: "Brak doświadczenia politycznego"
+  },
+  {
+    name: "Marek Jakubiak",
+    party: "Federacja dla RP",
+    age: 62,
+    advantages: "Gospodarka, niezależność",
+    disadvantages: "Małe poparcie"
+  },
+  {
+    name: "Maciej Maciak",
+    party: "Niezależny",
+    age: 45,
+    advantages: "Wolność słowa",
+    disadvantages: "Brak doświadczenia"
+  },
+  {
+    name: "Sławomir Mentzen",
+    party: "Nowa Nadzieja",
+    age: 39,
+    advantages: "Niskie podatki, wolny rynek",
+    disadvantages: "Radykalne poglądy"
+  },
+  {
+    name: "Karol Nawrocki",
+    party: "Niezależny",
+    age: 43,
+    advantages: "Patriotyzm",
+    disadvantages: "Brak doświadczenia wyborczego"
+  },
+  {
+    name: "Joanna Senyszyn",
+    party: "Niezależna",
+    age: 68,
+    advantages: "Prawa człowieka",
+    disadvantages: "Kontrowersje"
+  },
+  {
+    name: "Krzysztof Stanowski",
+    party: "Niezależny",
+    age: 41,
+    advantages: "Świeże spojrzenie",
+    disadvantages: "Brak doświadczenia politycznego"
+  },
+  {
+    name: "Rafał Trzaskowski",
+    party: "PO",
+    age: 53,
+    advantages: "Doświadczenie, samorządność",
+    disadvantages: "Krytyka działań w Warszawie"
+  },
+  {
+    name: "Marek Woch",
+    party: "Bezpartyjni Samorządowcy",
+    age: 55,
+    advantages: "Lokalność",
+    disadvantages: "Mało znany"
+  },
+  {
+    name: "Adrian Zandberg",
+    party: "Razem",
+    age: 45,
+    advantages: "Sprawiedliwość społeczna",
+    disadvantages: "Radykalizm"
+  }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const candidatesContainer = document.querySelector(".candidates");
+  const tableBody = document.getElementById("comparison-table");
+
+  const voteCounts = JSON.parse(localStorage.getItem("voteCounts")) || {};
+
+  candidatesData.forEach(({ name, party, age, advantages, disadvantages }) => {
+    // Dodaj kartę
+    const card = document.createElement("div");
+    card.className = "candidate";
+    card.innerHTML = `
+      <h2>${name}</h2>
+      <p><strong>Partia:</strong> ${party}</p>
+      <p><strong>Wiek:</strong> ${age}</p>
+      <p><strong>Zalety:</strong> ${advantages}</p>
+      <p><strong>Wady:</strong> ${disadvantages}</p>
+    `;
+
+    const voteBox = document.createElement("div");
+    voteBox.className = "vote-count";
+    voteBox.innerText = voteCounts[name] || 0;
+    card.appendChild(voteBox);
+
+    const btn = document.createElement("button");
+    btn.className = "vote-btn";
+    btn.innerText = "Głosuj";
+btn.onclick = () => {
+  if (localStorage.getItem("votedFor")) {
+    alert("Już oddałeś swój głos.");
+    return;
+  }
+  voteCounts[name] = (voteCounts[name] || 0) + 1;
+  localStorage.setItem("voteCounts", JSON.stringify(voteCounts));
+  localStorage.setItem("votedFor", name); // zapamiętujemy kto został wybrany
+  voteBox.innerText = voteCounts[name];
+  btn.disabled = true;
+  btn.innerText = "Głos oddany";
+  updateRanking();
+};
+if (localStorage.getItem("votedFor")) {
+  btn.disabled = true;
+  btn.innerText = "Głos oddany";
+}
+    card.appendChild(btn);
+
+    candidatesContainer.appendChild(card);
+
+    // Dodaj do tabeli
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${name}</td><td>${party}</td><td>${age}</td><td>${advantages}</td><td>${disadvantages}</td>
+    `;
+    tableBody.appendChild(row);
+  });
+
+  const rankingContainer = document.createElement("section");
+  rankingContainer.id = "ranking";
+  rankingContainer.innerHTML = "<h3>Ranking głosów</h3><ol id='ranking-list'></ol>";
+  document.querySelector("main").prepend(rankingContainer);
+
+  function updateRanking() {
+    const sorted = Object.entries(voteCounts).sort((a, b) => b[1] - a[1]);
+    document.getElementById("ranking-list").innerHTML = sorted
+      .map(([name, count]) => `<li><strong>${name}</strong>: ${count} głosów</li>`)
+      .join("");
+  }
+
+  updateRanking();
+});
+</script>
 </html>
