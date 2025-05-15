@@ -1,61 +1,148 @@
-/* style.css */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
   color: #333;
 }
 
 header {
-  background-color: #004080;
+  background-color: #003366;
   color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeInDown 1s ease;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
 }
 
 main {
-  padding: 20px;
+  padding: 30px 10%;
+  animation: fadeIn 1.5s ease;
 }
 
 .candidates {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
 }
 
 .candidate {
-  background-color: #fff;
-  border-left: 5px solid #004080;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-left: 5px solid #0055a5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
-.comparison {
-  margin-top: 40px;
+.candidate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-table {
+.candidate h2 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.vote-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #004080;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.comparison h2 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 1.8rem;
+}
+
+.comparison table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px 15px;
   text-align: left;
 }
 
 th {
-  background-color: #e6f0ff;
+  background-color: #0055a5;
+  color: white;
+}
+
+td {
+  border-top: 1px solid #ddd;
 }
 
 footer {
-  background-color: #004080;
+  background-color: #003366;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 15px 0;
   margin-top: 40px;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+}
+
+button.vote-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.vote-btn:hover {
+  background-color: #005999;
+}
+
+#ranking {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+#ranking h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
